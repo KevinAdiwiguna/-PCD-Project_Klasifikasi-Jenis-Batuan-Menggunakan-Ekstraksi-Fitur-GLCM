@@ -20,6 +20,42 @@ Model klasifikasi yang digunakan dalam project ini adalah:
 
 Project ini tidak hanya berfokus pada nilai akurasi akhir, tetapi juga pada pemilihan preprocessing yang sesuai, proses ekstraksi fitur, serta analisis hasil evaluasi model. Terdapat empat kombinasi preprocessing yang dibandingkan, mulai dari preprocessing sederhana seperti resize dan grayscale, hingga preprocessing yang lebih kompleks seperti median filter, histogram equalization, gaussian blur, sharpening, thresholding, serta operasi morfologi opening dan closing.
 
+## Struktur Repository
+
+```text
+PCD-Project_Klasifikasi-Jenis-Batuan-Menggunakan-Ekstraksi-Fitur-GLCM/
+│
+├── Assets/
+│   ├── Coal/
+│   ├── Limestone/
+│   └── Sandstone/
+│
+├── hasil_ekstraksi/
+│   ├── hasil_ekstraksi_Percobaan1.csv
+│   ├── hasil_ekstraksi_Percobaan2.csv
+│   ├── hasil_ekstraksi_Percobaan3.csv
+│   └── hasil_ekstraksi_Percobaan4.csv
+│
+├── hasil_klasifikasi/
+│   ├── hasil_klasifikasi_Percobaan1.csv
+│   ├── hasil_klasifikasi_Percobaan2.csv
+│   └── hasil_klasifikasi_Percobaan3.csv
+│
+├── Percobaan1.ipynb
+├── Percobaan2.ipynb
+├── Percobaan3.ipynb
+├── Percobaan4.ipynb
+└── README.md
+```
+
+Keterangan:
+
+- Folder `Assets/` berisi gambar asli yang dikelompokkan berdasarkan label kelas (`Coal`, `Limestone`, `Sandstone`).
+- Folder `hasil_ekstraksi/` berisi file CSV hasil ekstraksi fitur GLCM dari setiap percobaan.
+- Folder `hasil_klasifikasi/` berisi file CSV hasil klasifikasi dari setiap percobaan.
+- File `Percobaan1.ipynb` — `Percobaan4.ipynb` berisi notebook utama untuk preprocessing, ekstraksi fitur, klasifikasi, dan percobaan morfologi.
+- File `README.md` berisi dokumentasi project.
+
 # IMPORT LIBRARY
 ``` python
 import os
